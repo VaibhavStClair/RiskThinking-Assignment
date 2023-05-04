@@ -1,6 +1,6 @@
 # What is this project about?
 
-This project involves in creating a data pipeline that is used for deploying machine learning model.
+This project involves creating a data pipeline that is used for deploying machine learning model.
 It uses Spark and Python for data integration and transformations. 
 
 The Project is divided into 4 phases:
