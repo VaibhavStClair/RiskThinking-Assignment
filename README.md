@@ -77,9 +77,13 @@ Log files generated after Part 4:
 5. After entering the dummy values for Average and Rolling median, click submit to get the predicted Volume
 6. Verify log files, Silver, and Gold folders created under '../VolumePrediction/' directory
 
+DATA FLOW:
+
+![image](https://user-images.githubusercontent.com/90218716/236104446-e811ea5b-5456-4540-a4ce-60354741c1c1.png)
 
 
 References:
+
 https://stackoverflow.com/questions/32336915/pyspark-java-lang-outofmemoryerror-java-heap-space
 https://sparkbyexamples.com/pyspark/pyspark-read-and-write-parquet-file/
 https://gist.github.com/malanb5/0179157f732c9765c3bf6023ebbf2077
