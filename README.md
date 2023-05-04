@@ -77,3 +77,14 @@ Log files generated after Part 4:
 5. After entering the dummy values for Average and Rolling median, click submit to get the predicted Volume
 6. Verify log files, Silver, and Gold folders created under '../VolumePrediction/' directory
 
+
+
+References:
+https://stackoverflow.com/questions/32336915/pyspark-java-lang-outofmemoryerror-java-heap-space
+https://sparkbyexamples.com/pyspark/pyspark-read-and-write-parquet-file/
+https://gist.github.com/malanb5/0179157f732c9765c3bf6023ebbf2077
+https://sparkbyexamples.com/pyspark/pyspark-window-functions/
+https://www.learneasysteps.com/how-to-calculate-median-value-by-group-in-pyspark/
+https://www.linkedin.com/pulse/time-series-moving-average-apache-pyspark-laurent-weichberger/
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+https://www.geeksforgeeks.org/deploy-machine-learning-model-using-flask/
