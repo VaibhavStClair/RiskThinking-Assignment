@@ -53,18 +53,20 @@ User will give the average and the rolling median as input and it ll generate th
 
 Screenshots,
 Before ETL:
-![img_5.png](img_5.png)
+
+![/assets/images/img_5.png](/assets/images/img_5.png)
+
 After running ETL.py:
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
+![/assets/images/img_5.png](/assets/images/img_3.png)
+![/assets/images/img_5.png](/assets/images/img_4.png)
 
 After running main.py
-![img_6.png](img_6.png)
+![/assets/images/img_5.png](/assets/images/img_6.png)
 
-![img_7.png](img_7.png)
+![/assets/images/img_5.png](/assets/images/img_7.png)
 
 Log files generated after Part 4:
-![img_8.png](img_8.png)
+![/assets/images/img_5.png](/assets/images/img_8.png)
 
 # How to run on your machine
 
