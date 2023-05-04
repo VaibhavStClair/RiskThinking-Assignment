@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+  html, body {
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+</style>
+</head>
+
+
+<body>
+<h1> Predict Volume of an ETFS or a Stock using Moving Average and Rolling Median</h1>
+
+<form action="/submit" method = 'post'>
+  <label> Enter Moving Average </label> <br>
+  <input type="text" id="MA1"  name = "MA" value=""> <br>
+    <label> Enter Adjusted Close </label> <br>
+  <input type="text" id="AJ1"  name = "AJ" value=""> <br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

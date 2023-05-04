@@ -1,0 +1,11 @@
+pandas ==1.4.4
+flask
+scikit-learn
+nltk
+numpy
+fastparquet
+matplotlib
+pyspark
+py4j
+pytest
+black
