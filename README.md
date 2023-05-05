@@ -106,7 +106,8 @@ Running the file will give a single response text which is the predicted volume.
 
 The result generated will look like this
 
-![/assets/images/test_api.png](/assets/images/test_api.png)
+![image](https://user-images.githubusercontent.com/90218716/236528678-441c68e6-26c3-4170-9405-cee5900ccac8.png)
+
 
 
 =======
