@@ -1,6 +1,6 @@
 # What is this project about?
 
-This project involves in creating a data pipeline that is used for deploying machine learning model.
+This project involves creating a data pipeline that is used for deploying machine learning model.
 It uses Spark and Python for data integration and transformations. 
 
 The Project is divided into 4 phases:
@@ -77,6 +77,7 @@ Log files generated after Part 4:
 5. After entering the dummy values for Average and Rolling median, click submit to get the predicted Volume
 6. Verify log files, Silver, and Gold folders created under '../VolumePrediction/' directory
 
+<<<<<<< HEAD
 
 
 # Updated Deployment
@@ -105,3 +106,20 @@ Running the file will give a single response text which is the predicted volume.
 
 The result generated will look like this
 ![/assets/images/test_api.png](/assets/images/test_api.png)
+=======
+DATA FLOW:
+
+![image](https://user-images.githubusercontent.com/90218716/236104446-e811ea5b-5456-4540-a4ce-60354741c1c1.png)
+
+
+References:
+
+https://stackoverflow.com/questions/32336915/pyspark-java-lang-outofmemoryerror-java-heap-space
+https://sparkbyexamples.com/pyspark/pyspark-read-and-write-parquet-file/
+https://gist.github.com/malanb5/0179157f732c9765c3bf6023ebbf2077
+https://sparkbyexamples.com/pyspark/pyspark-window-functions/
+https://www.learneasysteps.com/how-to-calculate-median-value-by-group-in-pyspark/
+https://www.linkedin.com/pulse/time-series-moving-average-apache-pyspark-laurent-weichberger/
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+https://www.geeksforgeeks.org/deploy-machine-learning-model-using-flask/
+>>>>>>> ec8dca01eb5be3174ba1d6c9b01c65c04aef735f
