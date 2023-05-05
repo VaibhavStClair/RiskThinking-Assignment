@@ -30,7 +30,7 @@ There are 3 main functions have built in Utilities/ETL.py:
 I tried many methods for loading the data sets into memory like repartition or coalesce or changing the config parameters while loading, but they all seem to give me out of memory issue. 
 So for now I have taken first 40 files in both the datasets due to my laptop's limited RAM and cores. 
 
-NOTE: ***If you want to run all the files, please comment line 90,93, 102 and 103 in ETL.py file***
+NOTE: ***If you want to run all the files, please uncomment line 90,93, 102 and 103 in ETL.py file***
 
 2. writeparquet: A dictionary with key and value pair, writing the data frames as the value with the name as keys of the dictionary into storage. 
 
@@ -45,46 +45,31 @@ The next step is to apply the machine learning models as given by the document f
 Here the data was split in training and testing for 80% in training and 20% in testing. 
 After fitting the model to the training data set the prediction variable is made on the test data set. 
 The machine learning model outputs the prediction variable, the mean absolute error, and the mean squared error. 
-I am also making a directory to store these results and the model. 
-For deployment purpose, I am taking three variables as part of the deployment with the first one being the rolling median the second one being the moving average and the third one being the predicted value. 
 
-Flask integration is used for the deployment, in which index.html is for welcome page and result.html is for showcasing the results. 
-User will give the average and the rolling median as input and it ll generate the volume predictions.
-
-Screenshots,
-Before ETL:
-
-![/assets/images/img_5.png](/assets/images/img_5.png)
-
-After running ETL.py:
-![/assets/images/img_5.png](/assets/images/img_3.png)
-![/assets/images/img_5.png](/assets/images/img_4.png)
-
-After running main.py
-![/assets/images/img_5.png](/assets/images/img_6.png)
-
-![/assets/images/img_5.png](/assets/images/img_7.png)
-
-Log files generated after Part 4:
-![/assets/images/img_5.png](/assets/images/img_8.png)
+Log files and pickle files are saved to the directory.
 
 # How to run on your machine
 
 1. Clone the project and place your ETF and Stocks data files in '../VolumePrediction/bronze/' (for e.g ../VolumePrediction/bronze/etf)
 2. Run pip install -r requirements.txt for installing libraries
-3. For Part 1 and 2, execute ETL.py inside Utilities folder ***without this, step 4 would not execute***
-4. For Part 3 and 4, execute main.py file, this will generate localhost URL, please click it and start using the website
-5. After entering the dummy values for Average and Rolling median, click submit to get the predicted Volume
-6. Verify log files, Silver, and Gold folders created under '../VolumePrediction/' directory
-
-<<<<<<< HEAD
-
+3. Execute both ETL.py and volume_predictor.py
+4. For deployment, please refer next section
 
 # Updated Deployment
 
-To serve the Machine Learning API, 2 files were generated, api_app.py and test.py.
-For running the server on localhost, we can still use the file app.py 
+First, run the ETL.py file. It will generate a folder structure like this
 
+![image](https://user-images.githubusercontent.com/90218716/236530561-f5974af8-eff4-4196-ada0-c67011a9f478.png)
+
+Then, run the volume_predictor.py file which will give the logs of model and save model in pickle format in the directory
+
+![image](https://user-images.githubusercontent.com/90218716/236531302-fcabc173-22c1-4c20-aff3-a004e8a44e08.png)
+
+![image](https://user-images.githubusercontent.com/90218716/236531699-17d5deb8-551d-4769-8537-6c4d87b43d50.png)
+
+
+To serve the Machine Learning API, 2 files were made, api_app.py and test.py.
+For running the server on localhost, we can still use the file app.py 
 
 api_app.py file will
 1. Load the data in pickle format
@@ -107,9 +92,6 @@ Running the file will give a single response text which is the predicted volume.
 The result generated will look like this
 
 ![image](https://user-images.githubusercontent.com/90218716/236528678-441c68e6-26c3-4170-9405-cee5900ccac8.png)
-
-
-
 
 DATA FLOW:
 
