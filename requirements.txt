@@ -9,3 +9,7 @@ pyspark
 py4j
 pytest
 black
+pydantic
+fastapi
+uvicorn
+pypi-json

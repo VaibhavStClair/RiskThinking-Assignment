@@ -23,7 +23,7 @@ body {
 <body>
 <h1> Predict Volume of an ETFS or a Stock using Moving Average and Rolling Median</h1>
 
-<form action="/submit" method = 'post'>
+<form action="/predict" method = 'POST'>
   <label> Enter Moving Average </label> <br>
   <input type="text" id="MA1"  name = "MA" value=""> <br>
     <label> Enter Adjusted Close </label> <br>
@@ -31,5 +31,10 @@ body {
   <input type="submit" value="Submit">
 </form>
 
+<p> Moving average is:  <br>{{Moving_average}}</p>
+
+<p> Rolling median is:  <br>{{Rolling_median}}</p>
+
+<p> Predicted value is:  <br>{{prediction}}</p>
 </body>
 </html>

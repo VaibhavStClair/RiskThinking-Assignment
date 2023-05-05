@@ -77,3 +77,31 @@ Log files generated after Part 4:
 5. After entering the dummy values for Average and Rolling median, click submit to get the predicted Volume
 6. Verify log files, Silver, and Gold folders created under '../VolumePrediction/' directory
 
+
+
+# Updated Deployment
+
+To serve the Machine Learning API, 2 files were generated, api_app.py and test.py.
+For running the server on localhost, we can still use the file app.py 
+
+
+api_app.py file will
+1. Load the data in pickle format
+2. Make a class for inputting the necessary variable's type 
+3. Define an endpoint /volume_prediction 
+4. Define the variable machine learning feature values and use the predict function on it. 
+
+Meanwhile to import the necessary libraries, requirements.txt was also updated with following libraries: 
+
+pydantic
+fastapi
+uvicorn
+pypi-json
+
+To run api_app.py, we have to go to terminal and give command "uvicorn api_app:app --reload" 
+Next step is the run the test.py file which has the output of url given by uvicorn and add the endpoint defined in api_app.py. example - "http://127.0.0.1:8000/volume_prediction"
+The test.py contains the input_data which gets converted to json and loaded back to api request.
+Running the file will give a single response text which is the predicted volume.
+
+The result generated will look like this
+![/assets/images/test_api.png](/assets/images/test_api.png)
