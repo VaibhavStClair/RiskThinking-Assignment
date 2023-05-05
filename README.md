@@ -80,8 +80,11 @@ api_app.py file will
 Meanwhile to import the necessary libraries, requirements.txt was also updated with following libraries: 
 
 pydantic
+
 fastapi
+
 uvicorn
+
 pypi-json
 
 To run api_app.py, we have to go to terminal and give command "uvicorn api_app:app --reload" 
