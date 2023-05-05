@@ -105,7 +105,10 @@ The test.py contains the input_data which gets converted to json and loaded back
 Running the file will give a single response text which is the predicted volume.
 
 The result generated will look like this
+
 ![/assets/images/test_api.png](/assets/images/test_api.png)
+
+
 =======
 DATA FLOW:
 
